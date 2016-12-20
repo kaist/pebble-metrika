@@ -22,7 +22,7 @@
   <script>
   var token = /access_token=([-0-9a-zA-Z_]+)/.exec(document.location.hash)[1];
   var options = { token: token,delete:0 };
-  document.location = 'https://cloudpebble.net/ide/emulator/config?#{}' + encodeURIComponent(JSON.stringify(options));
+  document.location = 'pebblejs://close#' + encodeURIComponent(JSON.stringify(options));
   </script>
     </body>
   </html>
